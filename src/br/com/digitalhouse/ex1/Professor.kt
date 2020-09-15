@@ -1,10 +1,8 @@
-package br.com.digitalhouse
+package br.com.digitalhouse.ex1
 
-import java.math.BigInteger
+class Professor(nome:String, val RD: Int) : Pessoa(nome) {
 
-class Professor(nome:String, val RD:BigInteger) :Pessoa (nome) {
-
-    fun darAula(aula:Aula){
+    fun darAula(aula: Aula){
         println("O professor $nome está dando aula de ${aula.materia.nome} ")
     }
 
